@@ -1,0 +1,67 @@
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* SERVICE */
+.service .service_content .service_left button{
+    border-radius: 5px;
+    
+}
+
+.service .service_content .service_right{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 80px;
+}
+
+.service .service_content .service_right a img{
+    
+    box-shadow: 0px 2px 10px rgb(163, 159, 159);
+}
+
+.service .service_content .service_right h4:hover{
+    transition: all 1.5s;
+    color: rgba(250, 59, 161, 0.826);
+}
+
+/* PRODUCT */
+.business{
+    background-color: rgba(234, 227, 227, 0.767);
+}
+.product .product_content .icon span{
+    border-radius: 50%;
+    box-shadow: 0px 2px 10px rgb(163, 159, 159);
+}
+.product .product_content .content_center img{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    transition: all 0.5s;
+    transform: translateY(0);
+}
+.product .product_content .content_center img:hover{
+    transform: translateY(-10px);
+}
+.product .product_content h5{
+    font-weight: bold;
+    padding-bottom: 5px;
+    transition: all 0.5s;
+}
+
+.product .product_content h5:hover{
+    color: rgba(254, 61, 164, 0.825);
+}
+
+/* FEATURES */ 
+.feature .feature_content .picture img{
+    width: 100%;
+    transition: all 0.5s;
+    transform: translateY(0);
+}
+.feature .feature_content .picture img:hover{
+    transform: translateY(-10px);
+}
+.feature .feature_content button{
+    border-radius: 8px;
+}

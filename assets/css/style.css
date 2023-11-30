@@ -1,0 +1,318 @@
+
+@import url(./services.css);
+@import url(./home.css);
+@import url(./about.css);
+
+@import url(./landingpage.css);
+@import url(./contact.css);
+@import url(./style-liberty.css);
+/* reset css */
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Nunito', sans-serif;
+}
+body {
+  position: relative;
+}
+/* Header */
+.schedule_btn {
+  padding: 14px 15px;
+  background-color: white;
+  color: #dc3545;
+  border: 2px solid #dc3545;
+  border-radius: 5px;
+  transition: all 0.5s;
+} 
+header .navbar {
+  background-color: white !important;
+} 
+header .navbar .collapse .schedule_btn:hover{
+  border: 2px solid #dc6f79;
+  color: white;
+  background-color: #dc3545;
+}
+
+header .navbar .icon_bar {
+  margin-top: 50%;
+  transform: translateY(-50%);
+}
+/* Dark Theme*/
+/* Light theme */
+#myBody {
+  background-color: white;
+}
+#switchButton, #switchButton2 {
+  background-color: white;
+  box-shadow: none !important;
+  /* border: 1px solid black; */
+}
+#switchButton .fa-sun, #switchButton2 .fa-sun {
+  display: none;
+}
+#switchButton .fa-moon, #switchButton2 .fa-moon{
+  display: block;
+}
+
+#switchButton2 {
+  display: none;
+}
+/* Dark Theme*/
+.dark#myBody {
+  background-color: black;
+}
+.dark #switchButton, .dark #switchButton2 {
+  background-color: black;
+  /* border: 1px solid white; */
+}
+.dark #switchButton .fa-sun, .dark #switchButton2 .fa-sun {
+  display: block;
+  color: white;
+}
+
+.dark #switchButton .fa-moon, .dark #switchButton2 .fa-moon {
+  display: none;
+}
+
+.dark .main-header, .dark .container, .dark .container .navbar, .dark .container .navbar .collapse ul li a {
+  background-color: black !important;
+  color: white !important;
+}
+
+.dark .container .navbar .schedule_btn {
+  background-color: black !important;
+}
+
+.dark .page img {
+  opacity: 0.5;
+}
+.dark .page .header_content{
+  background: none;
+}
+
+.dark .container .navbar .collapse .dropdown ul li a {
+  background-color: white !important;
+  color: black !important;
+}
+
+.container .btn:hover{
+  background-color: #dc3545;
+  opacity: 0.75;
+  border: 1px solid #dc3545;
+}
+
+/* End Css Dark & Light Mode */
+@media  screen and (max-width: 992px) {
+  .schedule_btn {
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .navbar-toggler{
+    color: white;
+    background-color: #dc3545;
+  }
+
+  #switchButton {
+    display: none;
+  }
+  #switchButton2 {
+    display: block;
+  }
+}
+
+
+/* right sider bar 
+ */
+ span.w3l-icon.-back span.fa {
+  position: static;
+  color: #e6ebff;
+}
+
+#w3lDemoBar.w3l-demo-bar {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  padding: 40px 5px 10px;
+  padding-top: 70px;
+  background: #0D1326;
+  border-top-left-radius: 9px;
+  border-bottom-left-radius: 9px;
+}
+
+#w3lDemoBar.w3l-demo-bar a {
+  display: block;
+  color: #e6ebff;
+  text-decoration: none;
+  line-height: 24px;
+  opacity: .6;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#w3lDemoBar.w3l-demo-bar span.w3l-icon {
+  display: block;
+}
+
+#w3lDemoBar.w3l-demo-bar a:hover {
+  opacity: 1;
+}
+
+#w3lDemoBar.w3l-demo-bar .w3l-icon svg {
+  color: #e6ebff;
+}
+
+#w3lDemoBar.w3l-demo-bar .responsive-icons {
+  margin-top: 30px;
+  border-top: 1px solid #41414d;
+  padding-top: 40px;
+}
+
+#w3lDemoBar.w3l-demo-bar .demo-btns {
+  border-top: 1px solid #41414d;
+  padding-top: 30px;
+}
+
+#w3lDemoBar.w3l-demo-bar .responsive-icons a span.fa {
+  font-size: 26px;
+}
+
+#w3lDemoBar.w3l-demo-bar .no-margin-bottom {
+  margin-bottom: 0;
+}
+
+.toggle-right-sidebar span {
+  background: #0D1326;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #e6ebff;
+  border-radius: 50px;
+  font-size: 26px;
+  cursor: pointer;
+  opacity: .5;
+}
+
+.pull-right-demo-bar {
+  float: right;
+  position: fixed;
+  right: 0px;
+  top: 150px;
+  width: 90px;
+  z-index: 99999;
+  text-align: center;
+}
+
+/* ============================================================
+RIGHT SIDEBAR SECTION
+============================================================ */
+
+#right-sidebar {
+  width: 90px;
+  position: fixed;
+  z-index: 1000;
+  right: 0px;
+  top: 0;
+  margin-top: 140px;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  overflow-y: auto;
+}
+
+
+/* ============================================================
+RIGHT SIDEBAR TOGGLE SECTION
+============================================================ */
+
+.hide-right-bar-notifications {
+  margin-right: -300px !important;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+
+
+@media (max-width: 992px) {
+  #w3lDemoBar.w3l-demo-bar a.desktop-mode {
+    display: none;
+
+  }
+}
+
+@media (max-width: 767px) {
+  #w3lDemoBar.w3l-demo-bar a.tablet-mode {
+    display: none;
+
+  }
+}
+
+@media (max-width: 568px) {
+  #w3lDemoBar.w3l-demo-bar a.mobile-mode {
+    display: none;
+  }
+
+  #w3lDemoBar.w3l-demo-bar .responsive-icons {
+    margin-top: 0px;
+    border-top: none;
+    padding-top: 0px;
+  }
+
+  #right-sidebar,
+  .pull-right-demo-bar {
+    width: 90px;
+  }
+
+  #w3lDemoBar.w3l-demo-bar .no-margin-bottom-mobile {
+    margin-bottom: 0;
+  }
+}
+
+
+/* --- back to top -----  */
+.cd-top {
+  display: block;
+  /* text-align: center; */
+  /* align-items: center; */
+  width: 50px;
+  height: 45px;
+  background: #dc3545;
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+border-radius: 5px;
+  /* ẩn đi ở trạng thái mặc định */
+  visibility: hidden;
+  opacity: 0;
+}
+
+.cd-top:hover{
+  opacity: 1;
+  transition: 0.3s ease;
+}
+
+.cd-top span{
+  /* align-items: center; */
+  line-height: 45px;
+  font-size: 22px;
+  color: #fff;
+  padding-left: 14px;
+
+}
+
+/* scroll xuống class này sẽ được js thêm vào và hiện lên  */
+.cd-top--is-visible {
+  /* back-to-top button visible */
+  visibility: visible;
+  opacity: 1;
+}
+
+.cd-top--fade-out {
+  /* reduce button opacity if user keeps scrolling */
+  opacity: 0.5;
+}

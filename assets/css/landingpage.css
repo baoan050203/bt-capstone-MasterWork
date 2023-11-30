@@ -1,0 +1,109 @@
+@import url(./home.css);
+
+.intro {
+  padding-top: 90px;
+}
+.content {
+  background: linear-gradient(
+      to right,
+      var(--bg-color),
+      rgba(255, 255, 255, 0.92)
+    ),
+    url(./../image/banner.jpg);
+  position: relative;
+  overflow: hidden;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  align-items: center;
+  padding-top: 5rem;
+}
+
+.intro .content .content_left h3 {
+  font-size: 50px;
+  line-height: 57.5px;
+  font-weight: 700;
+}
+
+.intro .content .content_left p {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  max-width: 450px;
+}
+
+.map {
+  width: 100%;
+  filter: grayscale(0%);
+  display: block;
+}
+
+.project .tabs button {
+  background-color: red;
+}
+
+.project .collapse_project {
+  display: none;
+}
+
+.project .tabs_project {
+  display: block;
+}
+
+.project .project_right img {
+  width: 100%;
+}
+
+.collapse {
+  margin-bottom: 20px;
+}
+
+.new-block {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.33)),
+    url(https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 480px;
+  display: grid;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+#project_one {
+  display: block;
+}
+#project_two {
+  display: none;
+}
+#project_three {
+  display: none;
+}
+
+.w3l-products {
+  transition: all 0.5s;
+}
+
+.testimonials {
+  background: linear-gradient(
+      to right,
+      var(--bg-color),
+      rgba(255, 255, 255, 0.77)
+    ),
+    url(https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/b2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+@media screen and (max-width: 768px) {
+  .project .collapse_project {
+    display: block;
+  }
+
+  .project .tabs_project {
+    display: none;
+  }
+}
